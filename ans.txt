@@ -270,5 +270,43 @@ folders
 pom.xml
 src/main/java/cm
 
+go to vscode git clone
+in terminal
+mvn compile
+mvn test
+mvn clean install
+go to jenkin
+new item
+pipeline
+configure pipeline
+script
+
+pipeline {
+ agent any
+ tools {
+ maven 'M3'
+ }
+ stages {
+ stage('Checkout Git') {
+ steps {
+ git branch: 'main',
+ url: 'https://github.com/Sumathi3355/simple-maven-application'
+ }
+ }
+ stage('Build and Test') {
+ steps {
+ bat 'mvn clean test'
+ }
+ }
+ }
+}
+
+
+
+save 
+go to vscode
+mvn clean test
+
+go to jenkin build now
 
 
