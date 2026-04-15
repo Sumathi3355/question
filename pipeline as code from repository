@@ -33,6 +33,7 @@ SCM :git
 url
 credential
 master to main
+script path -> jenkinfile
 save
 build now
 
