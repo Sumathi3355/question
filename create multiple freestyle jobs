@@ -1,1 +1,23 @@
+3.
+post build action -- job flow visual
 
+create 3 new itwm jobA,B,c
+in Job-A build steps 
+execute windows batch command -> echo building the projects
+for Job-B -> echo Running the tests
+for Job-C -> echo deploying application
+next go to job A post action build
+build other projects
+for JOb_A
+Projects to build: Job-B
+select trigger only if build is stable
+save
+same for Job-B
+install pipeline
+loading plugin extensions
+pipeline:restapi
+stageview
+pipeli graph analysis
+loading plugin extension
+
+build now
