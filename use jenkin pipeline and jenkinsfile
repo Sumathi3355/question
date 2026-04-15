@@ -1,1 +1,19 @@
+use jenkinpipeline
+new item
+pipeline
+configure
+pipeline
+pipeline script
+code
+pipeline {
+ agent any
+stages {
+ stage('Build') { steps { echo 'Build' } }
+ stage('Test') { steps { echo 'Test' } }
+ stage('Deploy'){ steps { echo 'Deploy' } }
+ }
+}
+
+build now
+console out
 
