@@ -1,0 +1,22 @@
+2.
+source code and work automation:
+check git version
+create new repo in git
+go to jenkin  and manage jenkin and tool
+select git installation
+find path like C:\Program Files\Git\cmd\git.exe
+create freestyle job
+go to source code management
+select git
+paste git repo url
+add credential
+master to main
+save and apply
+add build steps
+execute windows batch command
+echo building project from github
+triggers:
+poll scm
+schedule
+H/2****
+build now
