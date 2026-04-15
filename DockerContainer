@@ -163,7 +163,8 @@ pipeline {
 Click Build Now in Jenkins
 Check Console Output
 
-
+kubectl get pods
+kubectl get services
 
  7. Verify Output:
 
