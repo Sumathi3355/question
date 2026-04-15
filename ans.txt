@@ -7,6 +7,7 @@ select free style
 ok
 go to build steps
 select execute windows batch command
+echo hello world
 build now
 console output
 
