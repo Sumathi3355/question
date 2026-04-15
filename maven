@@ -23,19 +23,41 @@ pom.xml
  </dependencies>
 </project>
 
-src/main/java/com/example
+src/main/java/com/example/App.java
+package com.example;
+public class App {
+ public int add(int a, int b) {
+ return a + b;
+ }
+}
 
-src/test/java/com/example
+src/test/java/com/example/AppTest.java
+package com.example;
+import org.junit.Test;
+import static org.junit.Assert.*;
+public class AppTest {
+ @Test
+ public void testAdd() {
+ App app = new App();
+ assertEquals(5, app.add(2, 3));
+ }
+}
 
 go to vscode git clone
 in terminal
 mvn compile
 mvn test
 mvn clean install
+
+
 go to jenkin
+tools-> maven installation-> name : M3-> maven home: C:\Program Files\Java\apache-maven-3.9.12
+-> apply and save
+
 new item
 pipeline
 configure pipeline
+
 script
 
 pipeline {
