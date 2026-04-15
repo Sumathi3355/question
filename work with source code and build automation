@@ -18,5 +18,5 @@ echo building project from github
 triggers:
 poll scm
 schedule
-H/2****
+H/2 * * * *
 build now
