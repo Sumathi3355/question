@@ -1,0 +1,38 @@
+Learning Goal
+Pipeline as code from repository
+Stepwise Tasks
+1. Create Jenkinsfile
+2. Commit Jenkinsfile to GitHub
+3. Configure Pipeline job:
+o SCM → Git
+4. Trigger build automatically
+5. Modify Jenkinsfile and rebuild
+6. View Stage View
+
+
+
+createe file in git:
+paste the pipelin code
+
+pipeline {
+ agent any
+stages {
+ stage('Build') { steps { echo 'Build' } }
+ stage('Test') { steps { echo 'Test' } }
+ stage('Deploy'){ steps { echo 'Deploy' } }
+ }
+}
+
+go to jenkin
+new item 
+jenkin-pipeline
+pipeline
+configure
+pipeline
+SCM :git
+url
+credential
+master to main
+save
+build now
+
