@@ -29,7 +29,9 @@ jenkin-pipeline
 pipeline
 configure
 pipeline
-SCM :git
+pipeline script from SCM
+
+SCM : -> select git
 url
 credential
 master to main
